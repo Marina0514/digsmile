@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIGSMILE</title>
+  <!--  -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/about.css">
+  <!--  -->
+  <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container"> 
+      <img class="logo" src="../digsmile/img/site-logo.png" alt="DIGSMILEのロゴ">
+      <img src="../digsmile/img/burger-menu.png" id="burger">
+      <img class="pc head" src="../digsmile/img/heading-img.png">
+      <img class="sp head" src="../digsmile/img/sp-heading.png">
+      <img class="tb head" src="../digsmile/img/tb-heading-img.png" >
+      <div class="background"></div>
+        <ul>
+          <li><h1>ABOUT US</h1></li>
+          <li>DIGSMILEについて</li>
+        </ul>
+    </div>
+
+    <section class="menu-modal">
+      <i class="fas fa-times"> MENU</i>
+      <ul>
+        <li><a href="index.html"><img class="mark" src="../digsmile/img/Group 8.png"></a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="">WORKS</a></li>
+        <li><a href="">CULTURE</a></li>
+        <li><a href="">TOPICS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <main>
+    <container>
+      <section class="vision">
+        <h2>VISION</h2>
+        <h4>デザインで人を笑顔にする会社</h3>
+        <p>
+          <p>私たちのデザインで人が笑顔になる。</p><br>
+          <p>そんなデザインを目指しています。</p><br>
+          <p>私たちが考える人を笑顔にできるデザインとは、<br>
+          デザインが課題を適切に解決できているかどうか。</p><br>
+          <p>ビジュアルだけでなく、<br>
+          本当に求められいているものは何かを考え抜いて、<br>
+          デザインしていきたい。</p><br>
+          <p>誰かの幸せを創ることも、<br>
+          世界の常識を変えていくことだってできる。</p><br>
+          <p>私たちはデザインの力を信じています。</p><br>
+        </p>
+      </section>
+      <section class="picture"> 
+        <img class="pc" src="../digsmile/img/ceo-img.png">
+        <img class="sp woman" src="../digsmile/img/sp-Group 17.png">
+        <div class="ceo-back">
+          <div class="ceo">
+            <h2>CEO MESSAGE</h2>
+            <p>
+              <p>良いデザインは人を幸せにする。</p>
+              <p>私達はそう信じています。</p>
+              <p class="height">デザインを通して、ビジネスの課題とユーザーの課題を解決するこ
+              とで、世の中を幸せにしていきたい。</p>
+              <p class="height">現在はあらゆるプロダクトがデジタル化されており、デザイナーに対
+              する需要はますます高まっています。それとともに、期待される役
+              割も幅広くなりつつあります。</p>
+              <p>クリエイティブで社会の可能性を切り開いていく。</p>
+              <p class="height">変化の激しい現代、私たちはデザインの力で、社会を良い方向に変
+              革していく企業を目指していきます。</p>
+            </p>
+
+          </div>
+        </div>
+      </section>
+      <section class="company">
+        <div class="foundation"> 
+          <h2>COMPANY</h2>
+          <ul>
+            <li><span>社名</span>　　　　　　株式会社DIGSMILE</li>
+            <li><span>代表取締役</span>　　　テイラースウィフト</li>
+            <li><span>設立</span>　　　　　　<time>2020年1月1日</time></li>
+            <li><span>資本金</span>　　　　　1億円</li>
+            <li><span>所在地</span>　　　　　東京都新宿区xx0-0-0</li>
+            <li><span>電話番号</span>　　　　03-0000-00000</li>
+          </ul>
+        </div>
+        <div class="map">
+          <img class="pc" src="../digsmile/img/Mask Group 8.png">
+          <img class="sp address" src="../digsmile/img/sp-Mask Group 8.png">
+        </div>
+
+      </section>
+    </container>
+  </main>
+  <footer> 
+    <p>©2018 DIGSMILE INC.</p>
+    <div class="top"><a href="#"><i class="fas fa-home"></i> TOP</a></div>
+  </footer> 
+
+  <style>
+    *{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header{
+  display: block;
+}
+
+header img{
+  float: left;
+  z-index: 10;
+  position: absolute;
+}
+
+.sp, .tb{
+  display: none;
+}
+
+.background{
+  background-color: #222222;
+  height: 500px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  z-index: 15;
+}
+
+#burger{
+  z-index: 10;
+  position: absolute;
+  left: 1180px;
+  margin-right: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.fa-times{
+  color: white;
+  float: right;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+header ul{
+  z-index: 10;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 180px;
+  left: 750px;
+  list-style: none;
+}
+
+header ul h1{
+  font-size: 72px;
+  
+}
+
+
+
+.menu-modal{
+  width: 35%;
+  height: 600px;
+  float: right;
+  background-color: #222222;
+  opacity: 0.9;
+  z-index: 15;
+  position: absolute;
+  left: 800px;
+  display: none;
+  
+}
+
+.menu-modal ul{
+  list-style: none;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-left: 200px;
+  z-index: 25;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
+
+.menu-modal .mark{
+  margin-left: 25px;
+  z-index: 25;
+  top: -50px;
+
+}
+
+.menu-modal ul a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+.menu-modal li{
+  margin-bottom: 20px;
+  
+}
+
+
+main{
+  width: 80%;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 600px;
+  font-family: Montserrat;
+  /* background-color: yellow; */
+}
+
+.vision h2{
+  font-size: 30px;
+  padding-bottom: 20px;
+  
+}
+
+
+.vision p{
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.vision p p{
+  line-height: 1.5;
+}
+
+.vision{
+  margin-left: 250px;
+  margin-bottom: 100px;
+}
+
+.picture img{
+  width: 480px;
+  height: 282px;
+  float: left;
+  z-index: 15;
+  position: absolute;
+}
+
+.picture .ceo-back{
+  background-color: #F0F0F0;
+  width: 700px;
+  height: 700px;
+  float: right;
+  position: relative;
+  margin-top: 150px;
+}
+
+.ceo{
+  width: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+}
+
+.ceo h2{
+  margin-bottom: 20px;
+}
+
+.ceo p{
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.height{
+  line-height: 1.5;
+}
+
+.company{
+  padding-top: 30px;
+}
+.company ul{
+  list-style: none;
+  width: 70%;
+  float: right;
+  margin-top: 30px;
+ 
+}
+
+.company ul span{
+  font-weight: bold;
+}
+
+.company img{
+  display: block;
+  padding-top: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.company .sp{
+  display: none;
+}
+
+.foundation{
+  margin-top: 950px;
+}
+
+.foundation h2{
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 10px;
+}
+
+.foundation li{
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 13px;
+  font-family: YuGothic;
+  margin-bottom: 15px;
+}
+
+footer{
+  background-color: #707070;
+  font-size: 10px;
+  color: #FFF;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.top{
+  font-size: 12px;
+  
+}
+
+footer p{
+  padding-top: 20px;
+  /* background-color: aqua;? */
+
+}
+
+@media only screen and (max-width: 375px){
+
+header{
+ width: 100%;
+}
+
+header .sp{
+ display: block;
+ 
+}
+
+.pc, .tb{
+  display: none;
+}
+
+header .head{
+  width: 70%;
+  float: left;
+  height: 350px !important;
+}
+
+.logo{
+  height: 20px;
+  left: 5px;
+  top: 15px;
+}
+
+.background{
+  background-color: #222222;
+  height: 400px !important;
+  width: 55% !important;
+  position: relative;
+  float: right;
+}
+
+#burger {
+  top: 15px;
+  left: 300px !important; 
+  margin: 0;
+}
+
+header ul{
+  left: 40px !important;
+  top: 130px;
+}
+
+header li h1{
+  font-size: 45px;
+}
+
+header .menu-modal{
+  position: absolute;
+  left: 70px;
+  display: none;
+  width: 80%;
+  }
+
+.menu-modal ul{
+    left: -140px !important;
+  }
+
+main{
+  margin: 0;
+  width: 100%;
+  padding-top: 390px;
+  padding-left: 15px;
+}
+
+.main-copy{
+  top: 300px;
+  left: 100px;
+  width: 245px;
+  height: 227px;
+}
+
+
+.vision{
+  width: 95% !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;
+}
+
+.vision h2{
+  text-align: left !important;
+  margin-top: 40px;
+}
+
+.picture .woman{
+display: block;
+width: 90%;
+height: 230px;
+float: left;
+position: absolute;
+left: 0;
+top: 400;
+}
+
+.picture .ceo-back{
+  width: 95% !important;
+  height: 950px !important;
+  float: right;
+  margin-top: 100px;
+  padding-top: 150px;
+  margin-right: 15px;
+}
+
+.ceo{
+  width: 100%;
+  margin-top: 50px !important;
+  
+}
+
+.ceo h2{
+  height: 50px !important;
+  font-size: 38px !important;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+
+h2{
+  font-size: 40px !important;
+  text-align: center;
+  color: #333333 !important;
+  margin-right: 50px;
+  text-align: center !important;
+ 
+}
+
+.ceo p{
+ 
+  padding: 0 15px 15px 15px;
+}
+
+.company h2{
+  float: left;
+  margin-top: 50px;
+}
+
+.foundation ul{
+  width: 100%;
+}
+
+.company{
+  margin-right: 15px;
+}
+
+.company .pc{
+  display: none;
+}
+
+.company .address{
+  display: block;
+
+}
+
+footer{
+  width: 100%;
+}
+
+}
+
+@media(max-width: 768px){
+  header{
+    width: 100%;
+   }
+   
+   header .tb{
+    display: block;
+   }
+   
+   .pc, .sp{
+     display: none;
+   }
+   
+   header .head{
+     width: 70%;
+     float: left;
+     height: 500px;
+   }
+   
+   .logo{
+     height: 20px;
+     left: 15px;
+     top: 20px;
+   }
+   
+   .background{
+     background-color: #222222;
+     height: 550px;
+     width: 50%;
+     position: relative;
+     float: right;
+   }
+   
+   #burger{
+     top: 20px;
+     left: 660px;
+     margin: 0;
+   }
+   
+   header ul{
+     left: 300px;
+     top: 210px;
+   }
+   
+   header li h1{
+     font-size: 52px;
+   }
+
+   .menu-modal{
+    position: absolute;
+    left: 470px;
+    height: 900px;
+  }
+
+  .menu-modal ul{
+    position: absolute;
+    left: -150px;
+  }
+
+  .menu-modal ul li{
+    margin-bottom: 50px;
+  }
+
+
+   main{
+     width: 95%;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+  
+   .vision{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+
+  .picture .woman{
+    display: block;
+    width: 320px;
+    height: 216px;
+    left: 20px;
+    margin-top: 50px;
+  }
+
+  .picture .ceo-back{
+    width: 70%;
+    float: right;
+    height: 780px;
+  }
+
+   h2{
+    font-size: 32px;
+    color: #333333;
+  }
+
+  .ceo{
+    margin-top: 130px;
+  }
+
+  .ceo p{
+    font-size: 16px;
+  }
+
+  .company ul{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+ 
+}
+  </style>
+
+
+
+
+
+  <script src="about.js"></script>
+</body>
+</html>

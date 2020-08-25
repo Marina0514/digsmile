@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIGSMILE</title>
+  <!--  -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+ 
+  <!--  -->
+  <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container"> 
+      <img class="logo" src="../digsmile/img/site-logo.png" alt="DIGSMILEのロゴ">
+      <img src="../digsmile/img/burger-menu.png" id="burger">
+      <img class="pc" src="../digsmile/img/heading-img_contact.png">
+      <img class="sp head" src="../digsmile/img/sp-Mask Group 13.png">
+      <img class="sp rectangle" src="../digsmile/img/sp-Rectangle 13.png">
+      <img class="tb" src="../digsmile/img/tb-Mask Group 12.png">
+      <img class="tb rectangle" src="../digsmile/img/tb-Rectangle 13.png">
+      
+      <div class="background"></div>
+        <ul>
+          <li><h1>CONTACT</h1></li>
+          <li class="small-heading">お問い合わせ</li>
+        </ul>
+    </div>
+
+    <section class="menu-modal">
+      <i class="fas fa-times"> MENU</i>
+      <ul>
+        <li><a href="index.html"><img class="mark" src="../digsmile/img/Group 8.png"></a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="">WORKS</a></li>
+        <li><a href="">CULTURE</a></li>
+        <li><a href="">TOPICS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </section>
+  </header>
+  <main>
+    <div class="container">
+      <p> 
+        ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。
+        送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+      </p>
+      <form action="#" method="POST">
+        <dt><label for="type">お問い合わせ種別 <span class="necessary">必須</span></label></dt>
+        <dd>
+          <input id="offer" type="radio"><lebel for="offer">制作依頼</lebel>
+          <input id="adoption" type="radio"><lebel for="adoption">採用</lebel>
+          <input id="ir" type="radio"><lebel for="ir">IR</lebel>
+          <input id="other" type="radio"><lebel for="other">その他</lebel>
+        </dd>
+       
+        <dt><label for="company">会社名・団体名</label></dt>
+        <dd><input type="text" name="company" id="company" value=""></dd>
+        <dt><label for="yourname">お名前 <span class="necessary">必須</span></label></dt>
+        <dd><input type="text" name="yourname" id="yourname" value=""></dd>
+        <dt><label for="mail">メールアドレス <span class="necessary">必須</span></label></dt>
+        <dd><input type="email" name="mail" id="mail" value=""></dd>
+        <dt><label for="number">電話番号</label></dt>
+        <dd><input type="text" name="number" id="number" value=""></dd>
+        <dt><label for="content">お問い合わせ内容</label></dt>
+        <dd><textarea name="content" id="content" cols="30" rows="10"></textarea></dd>
+        <dt><label for="policy" id="privacy">PRIVACY POLICY</label></dt>
+        <dd><textarea name="policy" id="policy" cols="30" rows="10" placeholder="個人情報保護方針
+          株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
+          
+          1.個人情報の収集、利用
+          当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
+          
+          2.個人情報の第三者への開示と提供
+          収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。
+          業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
+          
+          3.個人情報の保護
+          当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
+          
+          4.法令および関連規範の遵守
+          当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
+          
+          5.個人情報の開示・訂正・削除
+          当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
+          
+          法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
+          
+          お問い合わせ窓口
+          当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。
+          株式会社ファイアープレイス
+          "></textarea></dd>
+          <span class="check"><input type="checkbox" id="check"><label for="check">個人情報の取り扱いについて同意のうえ送信します。</label></span>
+          <input type="button" name="send" id="send" value="送信">
+
+
+      </form>
+     
+    </div>
+  </main>
+  <footer> 
+    <p>©2018 DIGSMILE INC.</p>
+    <div class="top"><a href="#"><i class="fas fa-home"></i> TOP</a></div>
+  </footer> 
+
+<style>
+  *{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header img{
+  float: left;
+  z-index: 10;
+  position: absolute;
+}
+
+header .sp, .tb{
+  display: none;
+}
+
+.background{
+  background-color: #222222;
+  height: 500px;
+  width: 50%;
+  position: relative;
+  float: right;
+}
+
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  z-index: 15;
+}
+
+#burger{
+  display: block;
+  z-index: 10;
+  position: absolute;
+  left: 1180px;
+  margin-right: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+header ul{
+  z-index: 10;
+  color: white;
+  font-family: Montserrat;
+  position: absolute;
+  top: 180px;
+  left: 750px;
+  list-style: none;
+}
+
+header ul h1{
+  font-size: 72px;
+  
+}
+
+.fa-times{
+  color: white;
+  float: right;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.menu-modal{
+  width: 35%;
+  height: 600px;
+  float: right;
+  background-color: #222222;
+  opacity: 0.9;
+  z-index: 15;
+  position: absolute;
+  left: 800px;
+  display: none;
+  
+}
+
+.menu-modal ul{
+  list-style: none;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-left: 200px;
+  z-index: 25;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
+
+.menu-modal .mark{
+  margin-left: 25px;
+  z-index: 25;
+  top: -50px;
+
+}
+
+.menu-modal ul a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+.menu-modal li{
+  margin-bottom: 20px;
+  
+}
+
+
+.menu-modal ul a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+.menu-modal li{
+  margin-bottom: 20px;
+  
+}
+
+
+main{
+  width: 60%;
+  height: 1000px;
+  padding-top: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.form{
+  width: 100%;
+}
+
+#yourname, #company, #mail, #number{
+  border: 1px solid #333333;
+  width: 100%;
+}
+
+textarea{
+  border: 1px solid #333333;
+  width: 100%;
+}
+
+form{
+  margin-top: 100px;
+}
+
+dt{
+  margin-top: 20px;
+}
+
+#privacy{
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+.necessary{
+  font-size: 8px;
+  color: white;
+  background-color: #333333;
+  width: 34px;
+  height: 18px;
+  padding-right: 5px;
+  padding-left: 5px;
+  opacity: 0.9;
+}
+
+footer{
+  background-color: #707070;
+  font-size: 10px;
+  color: #FFF;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  position: absolute;
+  top: 1800px;
+}
+
+
+
+footer p{
+  padding-top: 20px;
+  /* background-color: aqua;? */
+
+}
+
+::placeholder{
+  color: black;
+}
+
+#send{
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  padding: 2px 25px;
+  font-size: 12px;
+}
+
+#send:hover{
+  opacity: 0.8;
+}
+
+#check, #send{
+  margin-top: 30px;
+}
+
+
+form .check{
+  font-size: 12px;
+  padding-left: 50px;
+}
+
+
+@media(max-width: 375px){
+
+  header{
+    width: 100%;
+  }
+
+  header .pc, .tb{
+    display: none;
+  }
+
+  header .sp{
+    display: block;
+    width: 280px;
+    height: 270px;
+  }
+
+  .rectangle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+  }
+
+  header .container .tb{
+    display: none;
+  }
+  
+  header .container .head{
+    width: 280px;
+    height: 270px;
+  }
+
+  header .background{
+    width: 60%;
+    height: 300px;
+  }
+
+  header .menu-modal{
+    position: absolute;
+    left: 70px;
+    display: none;
+    width: 80%;
+    z-index: 27;
+    height: 800px;
+    }
+
+    .menu-modal ul{
+      left: -140px;
+      margin-top: 50px;
+      margin-left: 220px;
+   
+    }
+
+  main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+  }
+
+  .logo{
+    height: 20px;
+    left: 5px;
+    top: 15px;
+  }
+  
+  .background{
+    background-color: #222222;
+    height: 350px;
+    width: 50%;
+    position: relative;
+    float: right;
+  }
+  
+  #burger {
+    top: 15px;
+    left: 300px !important; 
+    margin: 0;
+  }
+  
+  header ul{
+    left: 120px !important;
+    top: 110px !important;
+    z-index: 25;
+  }
+  
+  header li h1{
+    font-size: 45px !important;
+  }
+
+  .small-heading{
+    text-align: right;
+  }
+
+  
+
+  main{
+    padding-top: 400px !important;
+  }
+ 
+  main .container p{
+    line-height: 2em;
+    font-size: 14px;
+  }
+
+  form .check{
+    padding-left: 15px;
+  }
+
+  #privacy{
+    font-family: Montserrat;
+    font-weight: bolder;
+  }
+
+  footer{
+   margin-top: 90px !important;
+  }
+
+
+ 
+}
+
+
+@media(max-width: 768px){
+
+  header{
+    width: 100%;
+   }
+  .pc, .sp{
+    display: none;
+  }
+
+  .tb{
+    display: block;
+  }
+
+  .rectangle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+  }
+
+  
+  
+  header .head{
+    width: 70%;
+    float: left;
+    height: 500px;
+  }
+  
+  .logo{
+    height: 20px;
+    left: 15px;
+    top: 20px;
+  }
+  
+  .background{
+    background-color: #222222;
+    height: 600px;
+    width: 50%;
+    position: relative;
+    float: right;
+  }
+  
+  #burger{
+    top: 20px;
+    left: 660px;
+    margin: 0;
+  }
+  
+  header ul{
+    left: 380px;
+    top: 150px;
+    z-index: 20;
+  }
+
+
+  
+  header li h1{
+    font-size: 70px;
+  }
+
+  .menu-modal{
+    position: absolute;
+    left: 470px;
+    height: 800px;
+    z-index: 27;
+
+  }
+
+  .menu-modal ul{
+    position: absolute;
+    left: -150px;
+    margin-top: 50px;
+    
+  }
+
+  .menu-modal ul li{
+    margin-bottom: 50px;
+  }
+
+  
+  main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 750px;
+  }
+
+  input{
+    height: 48px;
+  }
+
+  #offer, #adoption, #ir, #other{
+    margin-left: 30px;
+    height: 20px;
+    margin-top: 20px;
+  }
+
+ main .container p{
+
+  line-height: 2em;
+ }
+ #privacy{
+  font-family: Montserrat;
+  font-weight: bolder;
+}
+
+form #check{
+  height: 20px;
+  margin-left: 100px;
+}
+
+#send{
+  margin-top: 30px;
+}
+
+footer{
+  margin-top: 400px;
+ }
+
+}
+</style>
+  <script src="contact.js"></script>
+  
+</body>
+</html>
