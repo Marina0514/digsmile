@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DIGSMILE</title>
+    <!-- CSS -->
+    
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    
+    <!-- /CSS -->
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/f708ef27bb.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- /fonts -->
+  </head>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img class="logo" src="../digsmile/img/site-logo.png" alt="DIGSMILEのロゴ">
+        <img src="../digsmile/img/burger-menu.png" id="burger">
+        <img class="main-copy" src="../digsmile/img/main-copy.png" alt="">
+      </div>  
+      <!-- modal -->
+      <section class="menu-modal">
+        <i class="fas fa-times"> MENU</i>
+        <ul>
+          <li><a href="#"><img class="mark" src="../digsmile/img/Group 8.png"></a></li>
+          <li><a href="about_us.html">ABOUT US</a></li>
+          <li><a href="">WORKS</a></li>
+          <li><a href="">CULTURE</a></li>
+          <li><a href="">TOPICS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </section>
+      <!-- /modal -->
+    </header>
+    
+    <main>
+      <container>
+        <section class="big-culum">
+          <img src="../digsmile/img/about-img.png" alt="会社についてのリンク画像">
+            <div>
+              <h1>ABOUT US</h1>
+              <p>DIGSMILEは、デザインで人を笑顔にする会社。<br>
+                何でもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。DIGSMILEの社名にはそんな想いが込められています。
+              </p>
+              <a class="btn" href="about_us.html">READ MORE</a>
+            </div>
+        </section>
+          <div class="photos-container">
+
+            <div class="photos"> 
+              <section id="work" class="small">
+                <img src="../digsmile/img/section_works.png" alt="worksの紹介リンク画像">
+                <a class="btn work">READ MORE</a>
+              </section>
+              <section id="culture" class="small">
+                <img src="../digsmile/img/section_culture.png" class="culture" alt="cultureのリンク画像">
+                <a class="btn culture">READ MORE</a>
+              </section>
+            </div>
+          </div>
+
+
+      </container>
+    </main>
+    <section class="topics">
+      <h1>LATEST TOPICS</h1>
+        <div class="container">
+          <article>
+            <diV><time>2020.02.01</time></diV>
+            <h2>イベントレポート「VRクリエイター座談会～5Gの次に来るもの～」</h2>
+          </article>
+          
+          <article>
+            <div><time>2020.01.18</time></div>
+            <h2>プレリリースのお知らせ DIGGIN' RECORDS</h2>
+          </article>
+          
+          <article>
+            <div><time>2020.01.01</time></div>
+            <h2>新年明けましておめでとうございます</h2>
+          </article>
+
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <img src="../digsmile/img/recruit-img.png">
+        <div class="contact-letter">
+          <h1>CONTACT</h1>
+          <p>制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせは
+            コンタクトページから承っております。<br>
+            まずはお気軽にご連絡ください。担当者から改めて返信いたします。
+          </p>       
+            <a class="btn mail" href="contact.html">READ MORE</a>
+        </div>
+      </div>
+    </section>
+    <footer> 
+      <p>©2018 DIGSMILE INC.</p>
+      <div class="top"><a href="#"><i class="fas fa-home"></i> TOP</a></div>
+    </footer> 
+<style>
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  background-image: url("../digsmile/img/pc-fv.png");
+  background-size: cover;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 740px;
+  margin: 0;
+
+}
+
+.fa-times{
+  color: white;
+  float: right;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.logo{
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+
+#burger{
+  display: block;
+  z-index: 9;
+  float: right;
+  margin-right: 40px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+main{
+  /* background-color: pink; */
+  width: 1170px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.main-copy{
+  position: absolute;
+  top: 250px;
+  left: 900px;
+}
+
+.menu-modal{
+  width: 35%;
+  height: 700px;
+  float: right;
+  background-color: #222222;
+  opacity: 0.9;
+  
+  z-index: 15;
+  display: none;
+  
+}
+
+.menu-modal ul{
+  list-style: none;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+
+
+.menu-modal .mark{
+  margin-left: 25px;
+}
+
+.menu-modal ul a{
+  text-decoration: none;
+  color: white;
+  font-family: Montserrat;
+}
+
+.menu-modal li{
+  margin-bottom: 20px;
+  
+}
+
+.big-culum img{
+  width: 1170px;
+  height: 607px;
+  text-align: center;
+  /* background-color: red; */
+  margin: 0 auto;
+  margin-bottom: 60px;
+  z-index: 10;
+  position: relative;
+}
+
+.big-culum div{
+  width: 590px;
+  height: 387px;
+  background-color: white;
+  position: absolute;
+  top: 930px;
+  left:200px;
+  z-index: 15;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 32px;
+  padding-top: 30px;
+  padding-left: 30px;
+  color: #333333;
+}
+
+.big-culum div p{
+
+  font-size: 16px;
+  line-height: 2em;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+
+.small{
+  width: 48%;
+  height: 531px;
+  /* background-color: aqua; */
+  float: left;
+}
+
+.work{
+  margin-bottom: 10px;
+}
+
+.culture{
+  margin-left: 20px;
+}
+
+.culture{
+  margin-left: 4%;
+}
+
+#work{
+  margin-left: 20px;
+}
+
+#culture{
+margin-left: 20px;
+}
+
+.photos{
+  width: 1170px;
+  height: 607px;
+  padding-top: 300px;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.photos-container{
+  width: 100%;
+  height: 900px;
+  background-color: #F2F2F2;
+  position: absolute;
+  top: 1200px;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.topics{
+ height: 300px;
+ width: 1100px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.topics h1{
+  margin-top: 650px;
+  border-width: bold;
+  margin-left: 60px;
+  font-size: 32px;
+  letter-spacing: 68;
+  color: #333333;
+  width: 287px;
+  height: 39px;
+  font-family: Montserrat;
+}
+
+article{
+  margin: 0;
+  color: #333333;
+  font-size: 7px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.topics .container{
+  text-align: right;
+  /* background-color: aqua; */
+  margin-left: 600px;
+}
+
+article h2{
+  text-align: left;
+  margin-top: 20px;
+}
+
+time{
+  color: #CECECE;
+  text-align: left;
+}
+
+.contact{
+  background-color: #DDDDDD;
+  width: 100%;
+  height: 570px;
+}
+
+.contact .container{
+  /* background-color: aqua; */
+  width: 1170px;
+  margin-left: auto;
+  margin-right: 0;
+
+}
+
+.contact h1{
+  font-family: Montserrat;
+  font-size: 32px;
+  color: #333333;
+  margin-left: 10px;
+  margin-top: 170px;
+  margin-bottom: 20px;
+}
+
+.contact img{
+  width: 570px;
+  height: 390px;
+  margin-top: 100px;
+  display: block;
+  float: right;
+  margin-right: 90px;
+}
+
+
+.contact-letter p{
+ margin-right: 50px;
+ margin-left: 10px;
+ font-size: 16px;
+ line-height: 2em;
+ display: block;
+ width: 40%;
+ margin-top: 30px;
+}
+
+.contact-letter h1{
+  padding-top: 100px;
+
+}
+
+
+
+.btn {
+  text-decoration: none;
+  color: #F2F2F2;
+  font-size: 12px;
+  display: block;
+  background-color: black;
+  width: 150px;
+  height: 36px;
+ text-align: center;
+ margin-top: 50px;
+ padding-top: 10px;
+ font-family: Montserrat;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.btn p{
+  margin-left: 20px;
+}
+
+.mail{
+  margin-left: 50px;
+}
+
+footer{
+  background-color: #707070;
+  font-size: 10px;
+  color: #FFF;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.top{
+  font-size: 12px;
+  
+}
+
+footer p{
+  padding-top: 20px;
+  /* background-color: aqua;? */
+
+}
+
+/* Responsive */
+@media(max-width: 400px){
+
+ *{
+   box-sizing: border-box !important;
+ }
+
+
+  header{
+    background-image: url("../img/home_tablet.png");
+    width: 100%;
+  }
+
+  .logo{
+    width: 170px;
+    top: 20px;
+    left: 10px;
+  }
+
+  #burger{
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+
+  header .main-copy{
+    left: 50px;
+    top: 300px;
+  }
+
+  header .menu-modal{
+    position: absolute;
+    left: 70px;
+    display: none;
+    width: 80%;
+    }
+
+    .menu-modal ul{
+      margin-left: 220px;
+    }
+
+  .main-copy{
+    top: 300px;
+    left: 100px;
+    width: 245px;
+    height: 227px;
+  }
+
+  main{
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .big-culum img{
+    width: 100%;
+  }
+
+  .big-culum div{
+    width: 90%;
+    left: 15px;
+    font-size: 7px;
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+
+  .big-culum div h1{
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+
+  .small{
+    width: 100%;
+    
+   
+  }
+
+  .small img{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .photos{
+    width: 100%;
+  }
+
+.topics{
+  width: 100%;
+}
+
+.topics .container{
+  width: 100%;
+  margin-left: 0;
+}
+
+.topics h1{
+  margin-top: 970px;
+  margin-left: 10px;
+}
+
+article{
+  margin-left: 10px;
+}
+
+.contact{
+  height: 720px;
+}
+.contact .container{
+  width: 100%;
+  display: block;
+}
+.contact .container img{
+  width: 90%;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.contact h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 0;
+}
+
+.contact p{
+  height: 150px;
+  width: 90%;
+}
+}
+
+@media(max-width: 768px){
+
+  header{
+    background-image: url(../img/home_tablet.png);
+    width: 100%;
+    height: 1300px;
+  }
+
+  .menu-modal{
+    position: absolute;
+    left: 470px;
+    height: 900px;
+  }
+
+  .menu-modal ul{
+    position: absolute;
+    left: -150px;
+  }
+
+  .menu-modal ul li{
+    margin-bottom: 50px;
+  }
+
+  .main-copy{
+    top: 600px;
+    left: 300px;
+  }
+
+  main{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .big-culum img{
+    width: 100%;
+    position: relative;
+  }
+
+  .big-culum div{
+    width: 90%;
+    position: absolute;
+    left: 30px;
+    top: 1400px;
+    font-size: 7px;
+    font-weight: normal;
+    line-height: 1.5em;
+  }
+
+  .big-culum div h1{
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+
+  .small{
+    width: 100%;
+    
+   
+  }
+
+  .small img{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .photos{
+
+    width: 100%;
+  }
+
+  .photos-container{
+    margin-top: 500px;
+  }
+
+  #culture{
+    margin-top: 250px;
+  }
+  
+.topics{
+  width: 100%;
+}
+
+.topics .container{
+  width: 100%;
+ 
+}
+
+
+
+
+.contact .container{
+  width: 100%;
+  display: block;
+}
+.contact img{
+  width: 90%;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.contact h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 0;
+}
+
+.contact p{
+  height: 150px;
+  width: 90%;
+}
+
+.topics{
+  width: 100%;
+  margin-top: 1600px;
+}
+
+.topics .container{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+article{
+  width: 90%;
+}
+
+.contact img{
+  width: 520px;
+  height: 350px;
+  display: block;
+  float: none;
+  margin-left: 30px;
+  padding-top: 40px;
+}
+
+.contact p{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.contact h1{
+  margin-top: 20px;
+}
+
+.contact{
+  height: 780px;
+}
+
+.contact .btn{
+  margin-top: 20px;
+}
+  
+}
+</style>
+
+
+
+    <script src="js/jquery.js"></script>
+  </body>
+</html>
